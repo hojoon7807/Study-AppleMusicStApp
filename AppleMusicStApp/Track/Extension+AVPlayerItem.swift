@@ -12,7 +12,7 @@ import UIKit
 extension AVPlayerItem {
     func convertToTrack() -> Track? {
         let metadatList = asset.metadata
-        
+    
         var trackTitle: String?
         var trackArtist: String?
         var trackAlbumName: String?
