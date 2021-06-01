@@ -33,5 +33,9 @@ class TrackCollectionHeaderView: UICollectionReusableView {
     
     @IBAction func cardTapped(_ sender: UIButton) {
         // TODO: 탭했을때 처리
+        guard let todaysItem = item else {
+            return
+        }
+        tapHandler?(todaysItem)
     }
 }
